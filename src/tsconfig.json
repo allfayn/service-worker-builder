@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "types": [
+      "service_worker_api"
+    ]
+  },
+  "files": [
+    "src/worker-basic.ts"
+  ]
+}

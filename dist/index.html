@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Angular Mobile Toolkit</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#f27b00">
+  <script>
+      if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/worker-basic.min.js').then(function(registration) {
+          // Registration was successful
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          // registration failed :(
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }  
+  </script>
+</head>
+
+<body>
+  <h1>Angular Mobile Toolkit</h1>
+</body>
+
+</html>
