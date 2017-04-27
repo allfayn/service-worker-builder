@@ -7,7 +7,6 @@ export default {
   },
   output: {
     path: path.join(__dirname, '..', 'dist'),
-    // path: require.resolve('@angular/service-worker').replace('service-worker.umd.js', ''), // for testing in dev mode
     filename: 'worker-basic.min.js'
   },
   module: {
